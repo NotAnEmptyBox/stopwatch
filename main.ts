@@ -3,7 +3,7 @@ input.onButtonPressed(Button.A, function () {
     start = input.runningTime()
 })
 input.onButtonPressed(Button.B, function () {
-    basic.showNumber((input.runningTime() - start) / 1000)
+    basic.showNumber(Math.idiv(input.runningTime() - start, 1000))
 })
 basic.forever(function () {
 	
